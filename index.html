@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f6b3a">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preload" as="image" href="img/g_q1.webp">
+<title>Новорічні ялинки — Карпатська та Снігова королева</title>
+<!-- Meta Pixel: сюди вставити код піксела -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ac:#1f6b3a;--dk:#241519;--gr:#0f3d22;--bg:#f1f8f3;--ln:#cfe5d6;--out:#a9c4b3;--gold:#e8b84a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--out);transition:background .5s;font-family:Manrope,Arial,sans-serif;color:var(--dk);line-height:1.5}
+.col{max-width:480px;margin:0 auto;background:#fff;overflow:hidden;position:relative}
+.blk{padding:30px 18px;border-bottom:8px solid var(--bg);position:relative;transition:background .5s}.blk:nth-of-type(even){background:linear-gradient(var(--bg),#fff 60%)}
+h1,h2{font-family:'Playfair Display',Georgia,serif;line-height:1.15}
+h2{font-size:27px;text-align:center;margin-bottom:16px}
+p{font-size:16px;margin-bottom:10px}
+img{display:block;width:100%;height:auto;border-radius:14px}
+/* таймер */
+.tm{text-align:center}.tm b{display:block;font-size:15px;margin-bottom:8px}
+.tm .cells{display:flex;gap:10px;justify-content:center}
+.cell{background:var(--gr);transition:background .5s;color:#fff;border-radius:12px;width:84px;padding:10px 0}
+.cell span{display:block;font-size:34px;font-weight:800;line-height:1}.cell i{font-style:normal;font-size:12px;opacity:.75}
+.ban{background:var(--ac);color:#fff;text-align:center;font-weight:800;font-size:15px;padding:12px;border-radius:12px;margin:14px 0}
+/* бейджі */
+.bd{display:flex;gap:8px;margin:14px 0}.bd div{flex:1;background:var(--bg);border:1px solid var(--ln);border-radius:12px;text-align:center;font-size:12px;font-weight:600;padding:10px 4px}.bd em{display:block;font-style:normal;font-size:24px}
+/* ціна */
+.pr{text-align:center;margin:12px 0}.old{color:#999;text-decoration:line-through;font-size:18px}
+.disc{display:inline-block;background:#ffd23f;color:#000;font-weight:800;border-radius:30px;padding:4px 14px;margin:6px 0;font-size:16px}
+.new{font-size:52px;font-weight:800;color:var(--ac);line-height:1.1}
+.btn{display:block;width:100%;background:var(--ac);color:#fff;border:0;border-radius:16px;padding:18px;font:800 19px Manrope,sans-serif;text-align:center;text-decoration:none;cursor:pointer;animation:pl 1.8s infinite}
+@keyframes pl{0%,100%{transform:scale(1);box-shadow:0 0 0 0 color-mix(in srgb,var(--ac) 55%,transparent)}50%{transform:scale(1.03);box-shadow:0 0 0 12px color-mix(in srgb,var(--ac) 0%,transparent)}}
+@media(prefers-reduced-motion:reduce){.btn{animation:none}}
+.chk{list-style:none;margin:18px 0}.chk li{padding:6px 0 6px 32px;position:relative;font-weight:600}.chk li:before{content:"✓";position:absolute;left:0;top:5px;width:22px;height:22px;border-radius:50%;background:var(--gr);color:#fff;text-align:center;font-size:14px;line-height:22px}
+.left{text-align:center;margin-top:14px;font-size:17px}.left b{color:var(--ac);font-size:22px}
+.sub{text-align:center;color:var(--gr);font-weight:800;margin:6px 0 14px}
+/* переваги */
+.adv{margin-bottom:26px}.adv .n{font-family:'Playfair Display',serif;font-size:64px;color:var(--ln);font-weight:800;line-height:1}.adv h3{font-size:21px;margin:8px 0 4px}
+/* кольори */
+.sw{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.sw button{border:2px solid var(--ln);background:#fff;border-radius:12px;padding:4px;font:700 11.5px Manrope,sans-serif;cursor:pointer;color:var(--dk)}.sw button.on{border-color:var(--ac);background:var(--bg)}.sw img{border-radius:8px;margin-bottom:4px;aspect-ratio:1;object-fit:cover}
+/* характеристики */
+.sp{list-style:none;margin:16px 0}.sp li{padding:10px 0;border-bottom:1px solid var(--ln)}
+/* відгуки */
+.rt{text-align:center;margin-bottom:16px}.rt .big{font-size:56px;font-weight:800;color:var(--ac);line-height:1}.rt .st{color:#f5a623;font-size:24px}
+.rv{border:1px solid var(--ln);border-radius:14px;padding:14px;margin-bottom:12px}.rv .hd{display:flex;gap:12px;align-items:center;margin-bottom:8px}
+.av{width:44px;height:44px;border-radius:50%;background:var(--ac);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:20px}
+.rv small{color:#777;display:block;font-size:12px}.rv .ok{color:var(--gr);font-weight:700}
+/* кроки */
+.stp{display:flex;gap:14px;margin-bottom:16px}.stp .c{flex:none;width:42px;height:42px;border-radius:50%;background:var(--gr);color:#fff;font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center}.stp h3{font-size:18px}.stp p{margin:0}
+/* форма */
+form{background:var(--bg);border:1px solid var(--ln);border-radius:16px;padding:18px;margin:18px 0}
+form h3{font-family:'Playfair Display',serif;font-size:23px;text-align:center;margin-bottom:12px}
+input,select{width:100%;padding:15px;border:2px solid var(--ln);border-radius:12px;font:600 16px Manrope,sans-serif;margin-bottom:12px;background:#fff}
+input.err{border-color:#d11}.msg{display:none;text-align:center;font-weight:800;color:var(--gr);font-size:18px;padding:20px}
+footer{padding:22px;text-align:center;font-size:13px;color:#777}footer a{color:#777}
+
+.bar{background:var(--gr);color:#fff;text-align:center;font-weight:800;font-size:13px;padding:8px;transition:background .5s;letter-spacing:.3px}
+.gl{display:flex;justify-content:space-around;height:30px;background:linear-gradient(var(--gr),var(--gr)) 0 0/100% 3px no-repeat;margin:0;position:relative;top:-1px}
+.gl i{width:14px;height:20px;border-radius:50% 50% 50% 50%/40% 40% 60% 60%;margin-top:3px;animation:bl 1.6s infinite;box-shadow:0 0 12px 2px currentColor}
+.gl i:nth-child(4n+1){background:var(--ac);color:var(--ac)}.gl i:nth-child(4n+2){background:var(--gold);color:var(--gold);animation-delay:.4s}.gl i:nth-child(4n+3){background:#fff;color:#fff;animation-delay:.8s}.gl i:nth-child(4n){background:var(--gr);color:var(--gr);animation-delay:1.2s}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.35}}
+h2:before{content:"❄ ";color:var(--ac)}h2:after{content:" ❄";color:var(--ac)}
+img[data-k]{aspect-ratio:1/1;object-fit:cover;transition:opacity .25s;background:var(--bg)}.hero{border:3px solid var(--gold);box-shadow:0 10px 28px color-mix(in srgb,var(--ac) 30%,transparent)}
+.ban{background:linear-gradient(90deg,var(--ac),var(--gr),var(--ac));background-size:200% 100%;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:200% 0}}
+.sw button.on{border-color:var(--ac);background:var(--bg);transform:scale(1.04);box-shadow:0 4px 12px color-mix(in srgb,var(--ac) 35%,transparent)}
+.snow{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:50}
+.snow span{position:absolute;top:-30px;color:#fff;text-shadow:0 0 3px rgba(0,0,0,.18);animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(105vh) rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.snow,.gl i,.ban{animation:none}}
+
+.ph{aspect-ratio:1/1;border:2px dashed var(--ac);border-radius:14px;background:repeating-linear-gradient(45deg,var(--bg),var(--bg) 14px,#fff 14px,#fff 28px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--gr);font-weight:800;gap:6px;padding:10px}
+.ph b{font-size:64px;line-height:1}.ph small{font-weight:600;opacity:.75;font-size:13px}
+.vts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+.vt{border:2px solid var(--ln);background:#fff;border-radius:14px;padding:12px 8px;text-align:center;font:800 15px Manrope,sans-serif;cursor:pointer;color:var(--dk)}
+.vt small{display:block;font-weight:600;color:#777;font-size:12px;margin-top:2px}
+.vt.on{border-color:var(--ac);background:var(--bg);box-shadow:0 4px 12px color-mix(in srgb,var(--ac) 30%,transparent)}
+.szs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:6px}
+.sz{border:2px solid var(--ln);background:#fff;border-radius:12px;padding:10px 6px;text-align:center;font:800 16px Manrope,sans-serif;cursor:pointer;color:var(--dk)}
+.sz small{display:block;font-weight:700;color:var(--ac);font-size:14px}
+.sz.on{border-color:var(--ac);background:var(--bg)}
+.note{font-size:12px;color:#888;text-align:center;margin:6px 0 0}[data-slot] img{width:100%;height:auto;display:block;border-radius:14px}[data-slot="row"]{margin-bottom:14px}.xs{border:2px solid var(--ln);border-radius:16px;overflow:hidden;background:#fff}.xs img{border-radius:0}.xs-t{padding:16px}.xs-t p{margin:6px 0}.xs-p{font-size:20px;margin:6px 0 14px}.xs-p s{color:#999;font-size:16px}.xs-p b{color:var(--ac);font-size:26px;font-weight:800}.xs-t>b{font-size:19px}
+html{-webkit-text-size-adjust:100%}a,button,select,input{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.btn,.vt,.sz{min-height:48px}input,select{min-height:50px;font-size:16px}
+.col{padding-bottom:0}footer{padding-bottom:96px}
+.stk{position:fixed;bottom:0;left:50%;width:100%;max-width:480px;transform:translate(-50%,110%);transition:transform .3s;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border-top:1px solid var(--ln);box-shadow:0 -6px 20px rgba(0,0,0,.12);padding:10px 14px calc(10px + env(safe-area-inset-bottom))}
+.stk.on{transform:translate(-50%,0)}.stk small{display:block;font-size:12px;color:#777;line-height:1.2}.stk b{font-size:20px;color:var(--ac);font-weight:800}
+.stk .btn{width:auto;flex:none;padding:13px 20px;font-size:16px;animation:none;min-height:46px}
+@media(max-width:380px){.cell{width:70px}.cell span{font-size:28px}h2{font-size:23px}.new{font-size:44px}.blk{padding:24px 14px}.ban{font-size:13px}}
+@media(max-width:600px){.snow span:nth-child(n+5){display:none}}
+</style></head><body>
+<div class="snow" id="snow"></div>
+<div class="col">
+<div class="bar">🎅 НОВОРІЧНИЙ РОЗПРОДАЖ · ЯЛИНКИ 🎄</div>
+<div class="gl"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<!-- ===== БЛОК 1: ГОЛОВНИЙ ОФФЕР ===== -->
+<section class="blk"><div class="tm"><b>Ця пропозиція закінчиться через:</b><div class="cells"><div class="cell"><span class="h">00</span><i>годин</i></div><div class="cell"><span class="m">00</span><i>хвилин</i></div><div class="cell"><span class="s">00</span><i>секунд</i></div></div></div>
+<div class="ban">🔥 ВСТИГНИ ЗАМОВИТИ ДО НОВОРІЧНОГО ПІДВИЩЕННЯ ЦІН — ЗАМОВЛЯЙ ВЖЕ СЬОГОДНІ ПО ЗНИЖЦІ 🎄</div>
+<div data-slot="q1"></div><p class="note">* Прикраси на фото не входять у комплект</p>
+<div class="bd"><div><em>🚚</em>Доставка по Україні</div><div><em>⏳</em>Обмежена пропозиція</div><div><em>💳</em>Оплата при отриманні</div></div>
+<div class="pr"><div class="old">Звичайна ціна: <span class="pold"></span> грн</div><div class="disc">Знижка -<span class="pd"></span>%</div><div class="new"><span class="pnew"></span> грн</div></div>
+<a href="#order6" class="btn go">Замовити по знижці</a>
+<ul class="chk"><li>Висота від 100 до 250 см (у «Снігової королеви» до 300 см)</li><li>Пухнаста й густа, виглядає природно</li><li>Без запаху, не викликає алергії</li><li>Підставка та інструкція в комплекті</li><li>Зроблено в Україні</li></ul>
+<div class="left">Залишилось <b>14</b> шт по знижці</div></section>
+
+<!-- ===== ВИБІР ЯЛИНКИ: варіант + розмір ===== -->
+<section class="blk"><h2>Оберіть свою ялинку</h2>
+<div data-slot="row"></div>
+<div class="vts" id="vts"></div>
+<div class="szs" id="szs"></div>
+<a href="#order6" class="btn go" id="pick" style="margin-top:16px">Замовити</a></section>
+
+<!-- ===== БЛОК 2: ОПИС ===== -->
+<section class="blk"><h1 style="font-size:28px;text-align:center">Новорічна ялинка «<span class="vn"></span>»</h1>
+<div class="sub">Пишна · Стильна · Без клопоту</div>
+<p>Ялинка, яка створює новорічний настрій з першої хвилини. Збирається за кілька хвилин і служить не один сезон.</p>
+<p>Обирайте класичну зелену або «Снігову королеву» з білими кінчиками, ніби щойно припорошеними снігом.</p>
+<a href="#order6" class="btn go">Замовити по знижці</a></section>
+
+<!-- ===== БЛОК 3: ПЕРЕВАГИ (q2–q5) ===== -->
+<section class="blk"><h2>Чому її обирають</h2>
+<div class="adv"><div class="n">01</div><div data-slot="q2"></div><h3>Пишна й густа</h3><p>Гілки розправляються і виглядають природно. Ялинка заповнює кут і радує око.</p></div>
+<div class="adv"><div class="n">02</div><div data-slot="q3"></div><h3>Збирається за хвилини</h3><p>Підставка та інструкція вже в коробці. Розкладаєте частини одну в одну, розправляєте гілки, і ялинка готова.</p></div>
+<div class="adv"><div class="n">03</div><div data-slot="q4"></div><h3>Розмір під ваш дім</h3><p>Від компактних 100 см до великих 250 см. Обирайте висоту під свою стелю і простір.</p></div>
+<div class="adv"><div class="n">04</div><div data-slot="q5"></div><h3>Безпечна для всієї родини</h3><p>Екологічно чиста сировина, без запаху, не викликає алергії й не підтримує горіння. Безпечна для дітей і тварин.</p></div>
+<a href="#order6" class="btn go">Замовити по знижці</a></section>
+
+<!-- ===== ДОДАТКОВА ПРОПОЗИЦІЯ: кульки (посилання на окремий лендинг) ===== -->
+<section class="blk"><h2>Прикрасьте ялинку</h2>
+<div class="xs"><img src="img/balls.webp" loading="lazy" alt="Набір новорічних куль «Оксамит» — 9 кольорів">
+<div class="xs-t"><b>Набір куль «Оксамит», 40 шт</b>
+<p>Оксамитові кулі трьох розмірів у 9 трендових кольорах. Не б'ються, безпечні для дітей і тварин.</p>
+<div class="xs-p"><s>1490 грн</s> <b>1050 грн</b></div>
+<a class="btn" href="https://homeshop.fyi/" target="_blank" rel="noopener">Обрати колір куль →</a></div></div></section>
+
+<!-- ===== БЛОК 4: ХАРАКТЕРИСТИКИ ===== -->
+<section class="blk"><h2>Характеристики</h2>
+<div data-slot="har"></div>
+<ul class="sp" id="spl"></ul>
+<a href="#order6" class="btn go">Замовити по знижці</a></section>
+
+<!-- ===== БЛОК 5: ВІДГУКИ ===== -->
+<section class="blk"><h2>Що кажуть покупці</h2>
+<div class="rt"><div class="big">5.0</div><div class="st">★★★★★</div><small id="rvn"></small></div>
+<div id="rvs"></div></section>
+
+<!-- ===== БЛОК 6: ЯК ЗАМОВИТИ ===== -->
+<section class="blk"><h2>Як замовити</h2>
+<div class="stp"><div class="c">1</div><div><h3>Залиште заявку</h3><p>Заповніть форму з іменем і телефоном.</p></div></div>
+<div class="stp"><div class="c">2</div><div><h3>Отримайте дзвінок</h3><p>Оператор передзвонить і підтвердить замовлення.</p></div></div>
+<div class="stp"><div class="c">3</div><div><h3>Оплатіть при отриманні</h3><p>Доставка по Україні, оплата після отримання.</p></div></div></section>
+
+<!-- ===== БЛОК 7: ФОРМА ===== -->
+<section class="blk" id="order6"><div class="tm"><b>Ця пропозиція закінчиться через:</b><div class="cells"><div class="cell"><span class="h">00</span><i>годин</i></div><div class="cell"><span class="m">00</span><i>хвилин</i></div><div class="cell"><span class="s">00</span><i>секунд</i></div></div></div>
+<div class="ban">🔥 ВСТИГНИ ЗАМОВИТИ ДО НОВОРІЧНОГО ПІДВИЩЕННЯ ЦІН — ЗАМОВЛЯЙ ВЖЕ СЬОГОДНІ ПО ЗНИЖЦІ 🎄</div>
+<div data-slot="q6"></div>
+<div class="bd"><div><em>🚚</em>Доставка по Україні</div><div><em>⏳</em>Обмежена пропозиція</div><div><em>💳</em>Оплата при отриманні</div></div>
+<div class="pr"><div class="old">Звичайна ціна: <span class="pold"></span> грн</div><div class="disc">Знижка -<span class="pd"></span>%</div><div class="new"><span class="pnew"></span> грн</div></div>
+<form id="f"><h3><b>Залишіть заявку</b> та отримайте консультацію</h3>
+<input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+<input type="text" name="name" placeholder="Ваше ім'я" autocomplete="name" autocapitalize="words" enterkeyhint="next">
+<input type="tel" name="phone" id="ph" placeholder="+38 (0__) ___-__-__" autocomplete="tel" inputmode="tel" enterkeyhint="done">
+<select id="fv" aria-label="Модель"></select><select id="fs" aria-label="Висота"></select>
+<button type="submit" class="btn">Придбати</button></form>
+<div class="msg" id="ok">Дякуємо! Наш менеджер зв'яжеться з вами найближчим часом</div>
+<div class="left">Залишилось <b>14</b> шт по знижці</div>
+<p style="text-align:center;margin-top:14px;font-size:15px">🎁 До ялинки: <a href="https://homeshop.fyi/" target="_blank" rel="noopener" style="color:var(--ac);font-weight:800">набір куль «Оксамит» — 1050 грн</a></p></section>
+<div class="stk" id="stk"><div><small id="sk1"></small><b id="sk2"></b></div><a href="#order6" class="btn go">Замовити</a></div>
+<footer><a href="#">Політика конфіденційності</a><br>Всі права захищено © <span id="yr"></span></footer>
+</div>
+<script>
+// ===== ДАНІ: ціна продажу (грн) за висотою =====
+var V={'Карпатська зелена':{c:['#1f6b3a','#0f3d22','#f1f8f3','#cfe5d6','#a9c4b3'],e:'🎄',s:[
+ // [висота см, ціна продажу грн, діаметр низу см, рядів, гілочок, вага кг, коробка, частин, підставка]
+ [100,639,78,7,89,1.7,'84×15×15 см',1,'пластикова'],[130,839,90,8,122,2.4,'84×15×15 см',2,'пластикова'],[150,1169,100,10,175,3.4,'93×20×20 см',2,'пластикова'],[180,1519,110,12,266,4.7,'93×20×20 см',3,'пластикова'],[200,1769,120,14,350,6.2,'106×26×26 см',3,'пластикова'],[220,2069,130,15,413,7.3,'106×26×26 см',3,'пластикова'],[250,3189,150,17,585,10.3,'120×33×30 см',2,'пластикова']]},
+'Снігова королева':{c:['#2f6fa8','#17324d','#f1f6fb','#d3e1ee','#aab9c9'],e:'❄️',s:[
+ [100,739,78,7,107,1.8,'84×15×15 см',1,'пластикова'],[130,929,90,8,132,2.5,'84×15×15 см',2,'пластикова'],[150,1229,100,10,230,4,'94×23×23 см',2,'пластикова'],[180,1729,115,12,380,5.5,'106×26×26 см',3,'пластикова'],[200,2029,125,14,406,7,'106×26×26 см',3,'пластикова'],[220,2359,130,15,476,8.2,'112×26×26 см',3,'пластикова'],[250,3479,150,17,652,11,'120×33×30 см',3,'пластикова'],[300,5509,180,20,895,15,'120×37×37 см',3,'металева']]}};
+// Фото: Карпатська зелена (для «Снігової королеви» поки заглушки)
+var PH={'Карпатська зелена':{"q1":"img/g_q1.webp", "q2":"img/g_q2.webp", "q3":"img/g_q3.webp", "q4":"img/g_q4.webp", "q5":"img/g_q5.webp", "har":"img/g_har.webp", "q6":"img/g_q6.webp", "row":"img/g_row.webp"}};
+var SN={"a":"img/s_a.webp", "b":"img/s_b.webp", "c":"img/s_c.webp", "d":"img/s_d.webp", "e":"img/s_e.webp", "f":"img/s_f.webp"};
+PH['Снігова королева']={q1:SN.a,q2:SN.b,q3:SN.c,q4:SN.d,q5:SN.e,har:SN.e,q6:SN.a,row:SN.f};
+var LBL={q1:'q1.png — головне фото',q2:'q2.png — крупний план гілок',q3:'q3.png — збирання',q4:'q4.png — розмір',q5:'q5.png — святкова ялинка',har:'har.png — для характеристик',q6:'q6.png — ялинка в інтер\'єрі'};
+// Знижка: стара ціна = нова / DISC (DISC 0.8 = знижка -20%)
+var DISC=0.8,TG={token:'9052921461:AAGSOM3Rl57a6aDW2AY4iM7uM8f9F7MaS3c',chat:'567800143'}; // TG: токен бота й ID чату для заявок
+function pr(n){return[n,Math.round(n/DISC/10)*10-1]}
+function slots(){all('[data-slot]').forEach(function(el){var k=el.dataset.slot,s=(PH[cv]||{})[k];
+ if(s){if(el.dataset.cur!==cv){el.innerHTML='<img src="'+s+'" alt="Ялинка '+cv+'" decoding="async"'+(k=='q1'?'':' loading="lazy"')+'>';el.dataset.cur=cv}}
+ else{el.dataset.cur='';el.innerHTML=k=='row'?'':'<div class="ph"><b>'+V[cv].e+'</b>'+(LBL[k]||k)+'<small>'+cv+'</small></div>'}})}
+var RV=[['О','Оксана, Київ','Ялинка дуже пишна та гарна! Виглядає майже як справжня, а білі кінчики додають особливого новорічного настрою.',1],
+['Н','Наталія, Львів','Дуже задоволена покупкою! Гілочки густі, колір насичений, ялинка легко збирається та гарно тримає форму.',0],
+['М','Марія, Вінниця','Саме таку ялинку й хотіла! Стоїть стійко, виглядає розкішно, а після прикрашання взагалі наче з новорічної казки.',0]];
+// відгук про білі кінчики показуємо лише для «Снігової королеви»
+function reviews(){var r=RV.filter(function(x){return !x[3]||cv=='Снігова королева'});
+ $('rvs').innerHTML=r.map(function(x){return'<div class="rv"><div class="hd"><div class="av">'+x[0]+'</div><div><b>'+x[1]+'</b><small>★★★★★ · <span class="ok">✓ Перевірений покупець</span></small></div></div><p>«'+x[2]+'»</p></div>'}).join('');
+ $('rvn').textContent='на основі '+r.length+(r.length==1?' відгуку':' відгуків')}
+function spec(){var x=V[cv].s.filter(function(a){return a[0]==cs})[0];
+ $('spl').innerHTML=[['🎄','Модель',cv],['📏','Висота',cs+' см'],['↔️','Діаметр нижнього ярусу',x[2]+' см'],['🌿','Ряди й гілочки',x[3]+' рядів, '+x[4]+' гілочок'],['⚖️','Вага ялинки',x[5]+' кг'],['🧩','Конструкція',x[7]==1?'цільна':x[7]+' частини'],['📦','Розмір коробки',x[6]],['🧪','Матеріал',cv=='Снігова королева'?'плівка ПВХ, кінчики з білим інеєм':'плівка ПВХ'],['🛡️','Підставка',x[8]+', в комплекті']].concat(cv=='Снігова королева'?[['❄️','Особливість','голки не обсипаються, ствол металевий']]:[]).map(function(r){return'<li>'+r[0]+' <b>'+r[1]+':</b> '+r[2]+'</li>'}).join('')}
+var cv='Карпатська зелена',cs=180,$=function(i){return document.getElementById(i)},all=function(q){return document.querySelectorAll(q)};
+function render(){var v=V[cv],r=document.documentElement.style,c=v.c;
+r.setProperty('--ac',c[0]);r.setProperty('--gr',c[1]);r.setProperty('--bg',c[2]);r.setProperty('--ln',c[3]);r.setProperty('--out',c[4]);
+if(!v.s.some(function(x){return x[0]==cs}))cs=180;
+$('vts').innerHTML=Object.keys(V).map(function(k){return'<button type="button" class="vt'+(k==cv?' on':'')+'" data-v="'+k+'">'+V[k].e+' '+k+'<small>від '+pr(V[k].s[0][1])[0]+' грн</small></button>'}).join('');
+$('szs').innerHTML=v.s.map(function(x){return'<button type="button" class="sz'+(x[0]==cs?' on':'')+'" data-s="'+x[0]+'">'+x[0]+' см<small>'+pr(x[1])[0]+' грн</small></button>'}).join('');
+$('fv').innerHTML=Object.keys(V).map(function(k){return'<option'+(k==cv?' selected':'')+'>'+k+'</option>'}).join('');
+$('fs').innerHTML=v.s.map(function(x){return'<option value="'+x[0]+'"'+(x[0]==cs?' selected':'')+'>'+x[0]+' см — '+pr(x[1])[0]+' грн</option>'}).join('');
+var d=v.s.filter(function(x){return x[0]==cs})[0][1],p=pr(d);
+all('.pnew').forEach(function(x){x.textContent=p[0]});all('.pold').forEach(function(x){x.textContent=p[1]});
+all('.vn').forEach(function(x){x.textContent=cv});all('.pv').forEach(function(x){x.textContent=cv+', '+cs+' см'});
+all('.pd').forEach(function(x){x.textContent=Math.round((1-DISC)*100)});slots();spec();reviews();
+
+$('pick').textContent='Замовити: '+cv+', '+cs+' см';$('sk1').textContent=cv+', '+cs+' см';$('sk2').textContent=p[0]+' грн';document.querySelector('meta[name=theme-color]').content=c[0];
+document.querySelector('meta[name=theme-color]')&&0}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-v],[data-s]');if(!b)return;if(b.dataset.v)cv=b.dataset.v;if(b.dataset.s)cs=+b.dataset.s;render()});
+document.addEventListener('change',function(e){if(e.target.id=='fv')cv=e.target.value;if(e.target.id=='fs')cs=+e.target.value;if(e.target.id=='fv'||e.target.id=='fs')render()});
+render();
+// Таймер до кінця доби
+function tick(){var n=new Date(),e=new Date(n);e.setHours(23,59,59,999);var d=Math.max(0,e-n),p=function(x){return String(x).padStart(2,'0')};
+all('.h').forEach(function(x){x.textContent=p(Math.floor(d/36e5))});all('.m').forEach(function(x){x.textContent=p(Math.floor(d/6e4)%60)});all('.s').forEach(function(x){x.textContent=p(Math.floor(d/1e3)%60)})}
+tick();setInterval(tick,1000);$('yr').textContent=new Date().getFullYear();
+all('.go').forEach(function(a){a.onclick=function(e){e.preventDefault();$('order6').scrollIntoView({behavior:'smooth'})}});
+// Маска телефону
+var ph=$('ph');ph.addEventListener('input',function(){var d=ph.value.replace(/\D/g,'');if(d.indexOf('38')===0)d=d.slice(2);d=d.slice(0,10);var r='+38 ';if(d.length)r+='('+d.slice(0,3);if(d.length>=3)r+=') ';if(d.length>3)r+=d.slice(3,6);if(d.length>6)r+='-'+d.slice(6,8);if(d.length>8)r+='-'+d.slice(8,10);ph.value=d.length?r:''});
+// Відправка (поки TG не заповнено — тестовий режим)
+$('f').addEventListener('submit',function(e){e.preventDefault();var f=e.target,n=f.name,ok=true;
+n.classList.toggle('err',!n.value.trim());if(!n.value.trim())ok=false;var bad=ph.value.replace(/\D/g,'').length<12;ph.classList.toggle('err',bad);if(bad)ok=false;if(!ok||f.website.value)return;
+var row=V[cv].s.filter(function(x){return x[0]==cs})[0],p=pr(row[1])[0],btn=f.querySelector('button'),tel=ph.value,nm=n.value.trim();
+// артикул постачальника: Карп-100 … Карп-250 / С.К-100 … С.К-300 (С — кирилична)
+var art=(cv=='Снігова королева'?'С.К-':'Карп-')+cs;
+var utm={};try{utm=JSON.parse(sessionStorage.getItem('utms')||'{}')}catch(x){}
+var u=Object.keys(utm).map(function(k){return k+'='+utm[k]}).join(', ');
+var t='🛒 НОВА ЗАЯВКА\n\n🎄 '+cv+', '+cs+' см\n🏷 Артикул: '+art+'\n💰 Ціна: '+p+' грн\n\n👤 '+nm+'\n📞 '+tel+(u?'\n📊 '+u:'')+'\n🕒 '+new Date().toLocaleString('uk-UA');
+var done=function(){f.style.display='none';$('ok').style.display='block'};
+// захист від дубля: той самий номер і товар не частіше ніж раз на 60 с
+try{var l=JSON.parse(localStorage.getItem('lastOrder')||'{}');if(l.k===tel+art&&Date.now()-l.t<60000){done();return}}catch(x){}
+if(!TG.token||!TG.chat){console.warn('Telegram не налаштовано — тестовий режим');done();return}
+btn.disabled=true;
+fetch('https://api.telegram.org/bot'+TG.token+'/sendMessage',{method:'POST',body:new URLSearchParams({chat_id:TG.chat,text:t})}).then(function(r){return r.json()}).then(function(j){if(!j.ok)throw 0;try{localStorage.setItem('lastOrder',JSON.stringify({k:tel+art,t:Date.now()}))}catch(x){}done()}).catch(function(){btn.disabled=false;alert('Не вдалося відправити заявку. Перевірте інтернет і спробуйте ще раз.')})});
+// UTM-мітки з посилання реклами
+try{var qs=new URLSearchParams(location.search),uu={};['utm_source','utm_medium','utm_term','utm_content','utm_campaign'].forEach(function(k){if(qs.get(k))uu[k]=qs.get(k)});if(Object.keys(uu).length)sessionStorage.setItem('utms',JSON.stringify(uu))}catch(e){}
+// Нижня панель «Замовити» (з'являється при прокрутці, ховається біля форми)
+var stk=$('stk'),inForm=false;
+if('IntersectionObserver' in window)new IntersectionObserver(function(en){inForm=en[0].isIntersecting;upd()},{threshold:.1}).observe($('order6'));
+function upd(){stk.classList.toggle('on',scrollY>520&&!inForm)}
+addEventListener('scroll',upd,{passive:true});upd();
+// Легкий сніг
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){var sn=$('snow');for(var i=0;i<6;i++){var s=document.createElement('span');s.textContent='❄';s.style.left=(5+Math.random()*90)+'%';s.style.fontSize=(9+Math.random()*7)+'px';s.style.animationDuration=(14+Math.random()*10)+'s';s.style.animationDelay=(-Math.random()*20)+'s';s.style.opacity=.3+Math.random()*.3;sn.appendChild(s)}}
+</script></body></html>
